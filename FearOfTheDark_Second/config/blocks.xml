@@ -1,0 +1,624 @@
+<config>
+	<!-- Change Trees -->
+	<set xpath="/blocks/block[@name='treeDeadTree01']">
+		<property name="Group" value="Trees,Vegetation,Outdoor,Blocks"/>
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?White_Oak22Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,4,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+		<property name="MaxDamage" value="500"/>
+		<property name="CarryWeight" value="0.5"/>
+		<drop event="Harvest" name="FotDresourceBranch" count="1,2" tag="allHarvest"/>
+		<drop event="Destroy" name="FotDresourceLumber" count="2,3" tag="oreWoodHarvest"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeJuniper4m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?Hollywood_Juniper15mPrefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,4,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="CanPlayersSpawnOn" value="false"/>
+		<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		<property name="MaxDamage" value="250"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="0,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FoTDResourceResin" count="20,25" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="resourceYuccaFibers" count="0,3"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlainsTree2']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?White_Oak42Prefab"/>
+		<property name="ModelOffset" value="0,-.1,0"/>
+		<property name="MultiBlockDim" value="1,9,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="CanPlayersSpawnOn" value="false"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="MaxDamage" value="250"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="0,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="20,25" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="resourceYuccaFibers" count="0,3"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="1"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeBurntMaple01']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Tags" value="coalBurnedDmg"/>
+		<property name="Model" value="#Entities/Trees?Haunted_Tree_Wasteland25Prefab"/>
+		<property name="ModelOffset" value="0,-.5,0"/>
+		<property name="MultiBlockDim" value="1,3,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_small"/>
+		<property name="MaxDamage" value="250"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="1"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="0,1" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,2" tag="allHarvest"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeBurntMaple02']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Tags" value="coalBurnedDmg"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?Haunted_Tree_Wasteland39Prefab"/>
+		<property name="ModelOffset" value="0,-.4,0"/>
+		<property name="MultiBlockDim" value="1,5,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="MaxDamage" value="500"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="2,3"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="0,1" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,3" tag="allHarvest"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeBurntMaple03']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Tags" value="coalBurnedDmg"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?Haunted_Tree_Wasteland42Prefab"/>
+		<property name="ModelOffset" value="0,-.6,0"/>
+		<property name="MultiBlockDim" value="2,9,2"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ActivationDistance" value="14"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="0,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="allHarvest"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedWinterPine6m']">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CustomIcon" value="treeWinterEverGreen"/>
+		<property name="Model" value="#Entities/Trees?AlaskaCedar60Prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="1,6,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="PlantGrowing.Next" value="treePlantedWinterPine13m"/>
+		<property name="MaxDamage" value="500"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="40,50" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="0,5" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="2,3"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedMountainPine12m']">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CustomIcon" value="treeMountainPine12m"/>
+		<property name="Model" value="#Entities/Trees?MountainPineSml01Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,12,1"/>
+		<property name="PlantGrowing.Next" value="treePlantedMountainPine19m"/>
+		<property name="MaxDamage" value="500"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="40,50" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="2,3"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine12m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?MountainPineSml01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,12,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt"/>
+		<property name="MaxDamage" value="500"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="40,50" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="2,3"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeWinterEverGreen']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?AlaskaCedar60Prefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="MultiBlockDim" value="1,6,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="FallOver" value="true"/>
+		<property name="ParticleOnDeath" value="treeGib_winter_small"/>
+		<property name="MaxDamage" value="500"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="40,50" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="0,5" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="2,3"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeWinterPine13m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce45Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,12,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_winter01"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="5,10" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeOakSml01']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Model" value="#Entities/Trees?OakSml01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,7,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedOak08m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeOakSml01"/>
+		<property name="Model" value="#Entities/Trees?OakSml01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,7,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="PlantGrowing.Next" value="treePlantedOak16m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine19m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?MountainPineMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,19,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedMountainPine19m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeMountainPine19m"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?MountainPineMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,19,1"/>
+		<property name="PlantGrowing.Next" value="treePlantedMountainPine27m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedWinterPine13m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeWinterPine13m"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce45Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,12,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="PlantGrowing.Next" value="treePlantedWinterPine19m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="2,3" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="3,4" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="80,100" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="5,10" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPineDry21m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?MountainPineDeadPrefab"/>
+		<property name="MultiBlockDim" value="1,21,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="3,4" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="20,25" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePineBurntFullMed']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?FirMed01BurntPrefab"/>
+		<property name="MultiBlockDim" value="1,21,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="3,4" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="20,25" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePineBurntLrg']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?pineBurntPrefab"/>
+		<property name="MultiBlockDim" value="1,21,1"/>
+		<property name="BigDecorationRadius" value="6"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="3,4" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="20,25" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePineBurntMed']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?pineBurntMedPrefab"/>
+		<property name="MultiBlockDim" value="1,21,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="1000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="3,4" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="1,2" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="24,30" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="allHarvest"/>
+		<drop event="Harvest" name="FotDresourceFireWood" count="1,4" tag="oreWoodHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="4,5"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeFirLrg01']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?FirLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.2,0"/>
+		<property name="MultiBlockDim" value="1,24,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeOakMed01']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?OakMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,15,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedOak16m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeOakMed01"/>
+		<property name="Material" value="MtreeWoodMedium"/>
+		<property name="Model" value="#Entities/Trees?OakMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,15,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="PlantGrowing.Next" value="treePlantedOak27m"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine27m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?ScotsPineMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,27,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedMountainPine27m']">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="CustomIcon" value="treeMountainPine27m"/>
+		<property name="Model" value="#Entities/Trees?ScotsPineMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,27,1"/>
+		<property name="PlantGrowing.Next" value="treePlantedMountainPine41m"/>
+		<property name="PlantGrowing.FertileLevel" value="3"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeWinterPine19m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce55Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,19,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="ParticleOnDeath" value="treeGib_winter02"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="10,15" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedWinterPine19m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeWinterPine19m"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce55Prefab"/>
+		<property name="ModelOffset" value="0,-0.4,0"/>
+		<property name="MultiBlockDim" value="1,19,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="PlantGrowing.Next" value="treePlantedWinterPine28m"/>
+		<property name="PlantGrowing.FertileLevel" value="3"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="10,15" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine31m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?FirMed01Prefab"/>
+		<property name="ModelOffset" value="0,-0.2,0"/>
+		<property name="MultiBlockDim" value="1,31,1"/>
+		<property name="BigDecorationRadius" value="5"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
+		<property name="MaxDamage" value="2000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="4,8" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="160,200" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="8,10"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeOakMed02']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="Model" value="#Entities/Trees?OakMed02Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,26,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedOak27m']">
+		<property name="Extends" value="treeMasterGrowing"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="MtreeWoodLarge"/>
+		<property name="CustomIcon" value="treeOakMed02"/>
+		<property name="Model" value="#Entities/Trees?OakMed02Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,26,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="PlantGrowing.Next" value="treePlantedOak41m"/>
+		<property name="PlantGrowing.FertileLevel" value="3"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine41m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?MountainPineLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,41,1"/>
+		<property name="BigDecorationRadius" value="6"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedMountainPine41m']">
+		<property name="Extends" value="treeMountainPine41m"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="CustomIcon" value="treeMountainPine41m"/>
+		<property name="Model" value="#Entities/Trees?MountainPineLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,41,1"/>
+		<property name="PlantGrowing.FertileLevel" value="5"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeMountainPine48m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?ScotsPineLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.2,0"/>
+		<property name="MultiBlockDim" value="1,47,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeWinterPine28m']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce66Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,27,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="ParticleOnDeath" value="treeGib_winter03"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="15,20" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedWinterPine28m']">
+		<property name="Extends" value="treeWinterPine28m"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="treeWinterPine28m"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?Blue_Spruce66Prefab"/>
+		<property name="ModelOffset" value="0,-0.5,0"/>
+		<property name="MultiBlockDim" value="1,28,1"/>
+		<property name="BigDecorationRadius" value="3"/>
+		<property name="MaxDamage" value="4000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,12" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="320,400" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Harvest" name="resourceSnowBall" count="15,20" tag="allHarvest"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="17,20"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
+		<drop event="Destroy" name="treePlantedWinterPine1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treeOakLrg01']">
+		<property name="Extends" value="treeMaster"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="Model" value="#Entities/Trees?OakLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,40,1"/>
+		<property name="BigDecorationRadius" value="4"/>
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+		<property name="MaxDamage" value="6000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,20" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,20" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="480,600" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="25,30"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+	<set xpath="/blocks/block[@name='treePlantedOak41m']">
+		<property name="Extends" value="treeOakLrg01"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Material" value="MtreeWoodFull"/>
+		<property name="CustomIcon" value="treeOakLrg01"/>
+		<property name="Model" value="#Entities/Trees?OakLrg01Prefab"/>
+		<property name="ModelOffset" value="0,-0.3,0"/>
+		<property name="MultiBlockDim" value="1,40,1"/>
+		<property name="PlantGrowing.FertileLevel" value="5"/>
+		<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+		<property name="MaxDamage" value="6000"/>
+		<drop event="Harvest" name="FotDResourceBranch" count="5,20" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="5,20" tag="FotDHarvestAxe,allHarvest"/>
+		<drop event="Harvest" name="FotDResourceResin" count="480,600" tag="FotDHarvestBlade,notOnKill"/>
+		<drop event="Destroy" name="FoTDResourceLumber" count="25,30"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1"/>
+		<drop event="Destroy" name="treePlantedOak1m" count="1" prob=".05"/>
+	</set>
+</config>

@@ -1,0 +1,16 @@
+<configs>
+
+<append xpath="entity_classes">
+
+    <entity_class name="Mutated_Humanoid_Head" extends="zombieBoe">
+        <property name="Tags" value="entity,animal,npc,DRMid,perkAT03"/>
+        <property name="MapIcon" value="ui_game_symbol_tracking_wolf"/>
+        <property name="TrackerIcon" value="ui_game_symbol_tracking_wolf"/>
+        <property name="Mesh" value="#@modfolder:Assets/zeds.unity3d?HumanoidSoldier_HeadMutated.prefab"/>
+        <property name="WalkType" value="7"/>
+
+    </entity_class>
+
+</append>
+
+</configs>

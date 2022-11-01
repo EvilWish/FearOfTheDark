@@ -1,0 +1,56 @@
+<configs>
+    <!-- Remove Area -->
+    <remove xpath="/recipes/recipe[@name='foodVegetableStew']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarBoiledWater']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarPureMineralWater']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarCoffee']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarBlackStrapCoffee']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarGoldenRodTea']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasAwesomeSauce']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasLearningElixir']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasMoonshine']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarRedTea']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarRiverWater']"></remove>
+    <remove xpath="/recipes/recipe[@name='drinkJarYuccaJuice']"></remove>
+
+    <remove xpath="/recipes/recipe[@name='foodBaconAndEggs']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodBakedPotato']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodBlueberryPie']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodPumpkinPie']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodPumpkinCheesecake']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodPumpkinBread']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodBoiledMeat']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodCanSham']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodCharredMeat']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodChiliDog']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodCornBread']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodCornOnTheCob']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodEggBoiled']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodFishTacos']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodGrilledMeat']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodHoboStew']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodMeatStew']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodGumboStew']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodShepardsPie']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodSpaghetti']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodTunaFishGravyToast']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodShamChowder']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodSteakAndPotato']"></remove>
+    <remove xpath="/recipes/recipe[@name='foodShamChowder']"></remove>
+
+
+
+    <!-- Append Area -->
+    <append xpath="/recipes">
+        <!-- Only if FotD is Installed -->
+        <recipe name="FotDtoolForgeBrickForm" count="1" craft_time="30" craft_area="campfire">
+            <ingredient name="resourceClayLump" count="30"/>
+            <ingredient name="resourceYuccaFibers" count="10"/>
+        </recipe>
+        <!-- End of FotD  -->
+
+        <!-- Normal Recipes -->
+        
+    
+    </append>
+</configs>

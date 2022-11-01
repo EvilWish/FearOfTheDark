@@ -1,0 +1,8 @@
+<configs>
+    <!-- Remove Area -->
+
+    <!-- Append Area -->
+    <append xpath="/blocks">
+    
+    </append>
+</configs>

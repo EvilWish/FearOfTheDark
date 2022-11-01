@@ -1,0 +1,197 @@
+<config>
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']">
+		<property name="Group" value="ChoppingTools,Tools,Axes,Basics,Melee,Weapons/Tools,Items"/>
+		<property name="Tags" value="axe,melee,grunting,medium,tool,longShaft,perkMiner69r,perkMotherLode,perkTheHuntsman,toolAxe,toolButcher"/>
+		<property name="HoldType" value="17"/>
+		<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/stone_axePrefab.prefab"/>
+		<property name="DisplayType" value="melee"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+		<property name="SoundJammed" value="ItemNeedsRepair"/>
+		<property name="SoundDestroy" value="wooddestroy1"/>
+		<property name="ShowQuality" value="true"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="SellableToTrader" value="false"/>
+		<property name="Material" value="Mstone"/>
+		<property name="Weight" value="15"/>
+		<property name="EconomicValue" value="75"/>
+		<property name="RepairTools" value="FotDrepairKitTIer0"/>
+		<property name="MaintenanceGroup" value="MG_Stone"/>
+		<property class="Action0">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sphere" value=".15"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<property name="GrazeStart" value=".4"/>
+			<property name="GrazeEnd" value=".5"/>
+			<property name="SwingDegrees" value="50"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="SwingAngle" value="180"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="stonehitorganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sphere" value=".15"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			<property name="ToolCategory.Butcher" value="0" param1="4"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+			<property name="GrazeStart" value=".4"/>
+			<property name="GrazeEnd" value=".5"/>
+			<property name="SwingDegrees" value="50"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="SwingAngle" value="135"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="stonehitorganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<effect_group name="StatsMelee" type="Generic" tiered="false">
+			<passive_effect operation="base_set" name="EntityDamage" value="9"/>
+			<passive_effect operation="base_set" name="BlockDamage" value="20"/>
+			<passive_effect operation="base_set" name="AttacksPerMinute" value="55"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="9" tags="primary"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="18" tags="secondary"/>
+			<passive_effect operation="base_set" name="DegradationMax" value="200"/>
+			<passive_effect operation="base_set" name="HarvestCount" value=".5" tags="butcherHarvest"/>
+			<passive_effect operation="base_set" name="DamageModifier" value="1" tags="head,perkMiner69r" match_all_tags="true"/>
+			<passive_effect operation="base_set" name="DismemberChance" value=".05" tags="perkMiner69r"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="2" tags="tree"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.8" tags="earth,ore,stone,metal"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.9" tags="secureLoot,oreTitanium"/>
+			<passive_effect operation="base_add" name="HarvestCount" value="1" tags="FotDHarvestAxe"/>
+		</effect_group>
+	</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']">
+		<property name="Extends" value="meleeToolRepairT0StoneAxe" param1="SellableToTrader"/>
+		<property name="Tags" value="axe,melee,light,tool,longShaft,tazas,perkMiner69r,perkMotherLode,perkTheHuntsman,toolAxe,toolButcher"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="CarryWeight" value="2"/>
+		<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+		<property name="CustomIconTint" value="ffb0b0"/>
+		<effect_group name="StatsMelee" type="Generic" tiered="false">
+			<passive_effect operation="base_set" name="EntityDamage" value="10"/>
+			<passive_effect operation="base_set" name="BlockDamage" value="25"/>
+			<passive_effect operation="base_set" name="AttacksPerMinute" value="55"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="9" tags="primary"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="18" tags="secondary"/>
+			<passive_effect operation="base_set" name="DegradationMax" value="250"/>
+			<passive_effect operation="base_set" name="HarvestCount" value=".5" tags="butcherHarvest"/>
+			<passive_effect operation="base_set" name="DamageModifier" value="1" tags="head,perkMiner69r" match_all_tags="true"/>
+			<passive_effect operation="base_set" name="DismemberChance" value=".05" tags="perkMiner69r"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="2" tags="tree"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.8" tags="earth,ore,stone,metal"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.9" tags="secureLoot,oreTitanium"/>
+			<passive_effect operation="base_add" name="HarvestCount" value="1" tags="FotDHarvestAxe"/>
+		</effect_group>
+	</set>
+	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']">
+		<property name="Extends" value="meleeToolRepairT0StoneAxe" param1="CustomIcon,SellableToTrader"/>
+		<property name="Group" value="ChoppingTools,Tools,Axes,Melee,Weapons/Tools,Items"/>
+		<property name="Tags" value="axe,melee,grunting,medium,tool,longShaft,perkMiner69r,perkMotherLode,perkTheHuntsman,toolAxe,toolButcher"/>
+		<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/fireaxe_ironPrefab.prefab"/>
+		<property name="Material" value="Mmetal"/>
+		<property name="Weight" value="100"/>
+		<property name="EconomicValue" value="500"/>
+		<property name="CarryWeight" value="3"/>
+		<property name="UnlockedBy" value="meleeToolAxeT1IronFireaxeBlueprint"/>
+		<property name="RepairTools" value="FotDrepairKitTier1Tools"/>
+		<property name="MaintenanceGroup" value="MG_Iron"/>
+		<property class="Action0">
+			<property name="Sound_start" value="axe_swinglight"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="metalstaborganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<property class="Action1">
+			<property name="Sound_start" value="axe_swingheavy"/>
+			<property class="HitSounds">
+				<property name="Override0" value="organic" param1="metalstaborganic"/>
+			</property>
+			<property class="GrazeSounds">
+				<property name="Override0" value="organic" param1="metalgrazeorganic"/>
+			</property>
+		</property>
+		<effect_group name="StatsMelee" type="Axe" tiered="false">
+			<passive_effect operation="base_set" name="EntityDamage" value="20"/>
+			<passive_effect operation="base_set" name="BlockDamage" value="40"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="14" tags="primary"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="28" tags="secondary"/>
+			<passive_effect operation="base_set" name="DegradationMax" value="400"/>
+		</effect_group>
+	</set>
+	<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']">
+		<property name="Extends" value="meleeToolAxeT1IronFireaxe" param1="SellableToTrader"/>
+		<property name="Tags" value="axe,melee,grunting,medium,tool,longShaft,perkMiner69r,perkMotherLode,perkTheHuntsman,toolAxe,toolButcher"/>
+		<property name="Meshfile" value="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab"/>
+		<property name="Material" value="MmeleeToolAllSteel"/>
+		<property name="Weight" value="100"/>
+		<property name="EconomicValue" value="750"/>
+		<property name="CarryWeight" value="3.5"/>
+		<property name="UnlockedBy" value="meleeToolAxeT2SteelAxeBlueprint"/>
+		<property name="RepairTools" value="FotDrepairKitTier2Tools"/>
+		<property name="MaintenanceGroup" value="MG_Steel"/>
+		<property class="Action0">
+			<property name="Sound_start" value="axe_swinglight"/>
+		</property>
+		<property class="Action1">
+			<property name="Sound_start" value="axe_swingheavy"/>
+		</property>
+		<effect_group name="StatsMelee" type="Axe" tiered="false">
+			<passive_effect operation="base_set" name="EntityDamage" value="25"/>
+			<passive_effect operation="base_set" name="BlockDamage" value="50"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="16" tags="primary"/>
+			<passive_effect operation="base_set" name="StaminaLoss" value="32" tags="secondary"/>
+			<passive_effect operation="base_set" name="DegradationMax" value="500"/>
+		</effect_group>
+	</set>
+	<insertAfter xpath="/items//effect_group[@type='Knife']">
+		<effect_group tiered="false">
+			<passive_effect operation="base_set" name="AttacksPerMinute" value="120"/>
+			<passive_effect operation="base_add" name="AttacksPerMinute" value="-55" tags="secondary"/>
+			<passive_effect operation="base_set" name="MaxRange" value="2"/>
+			<passive_effect operation="base_set" name="BlockRange" value="2.5"/>
+			<passive_effect operation="perc_add" name="EntityDamage" value="1" tags="secondary"/>
+			<passive_effect operation="perc_add" name="BlockDamage" value="1" tags="secondary"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value=".6" tags="organic"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.8" tags="earth,stone,metal"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.9" tags="secureLoot,oreTitanium"/>
+			<passive_effect operation="base_set" name="HarvestCount" value="1" tags="butcherHarvest,FotDHarvestBlade"/>
+		</effect_group>
+		<effect_group name="Sneak Damage Bonus">
+			<requirement operation="Equals" name="CVarCompare" cvar="_crouching" value="1"/>
+			<requirement operation="GT" name="CVarCompare" cvar="_notAlerted" value="0" target="other"/>
+			<passive_effect operation="base_add" name="DamageBonus" value="4"/>
+			<passive_effect operation="perc_add" name="EntityDamage" value="4" tags="perkDeepCuts"/>
+			<display_value name="dEntityDamageSneak" value="4"/>
+		</effect_group>
+	</insertAfter>
+	<insertAfter xpath="/items//effect_group[@type='Axe']">
+		<effect_group tiered="false">
+			<passive_effect operation="base_set" name="AttacksPerMinute" value="45"/>
+			<passive_effect operation="perc_add" name="AttacksPerMinute" value="-.3" tags="secondary"/>
+			<passive_effect operation="base_set" name="MaxRange" value="2.4"/>
+			<passive_effect operation="base_set" name="BlockRange" value="3"/>
+			<passive_effect operation="perc_add" name="EntityDamage" value="1.25" tags="secondary"/>
+			<passive_effect operation="perc_add" name="BlockDamage" value="1.25" tags="secondary"/>
+			<passive_effect operation="base_set" name="DismemberChance" value=".05" tags="perkMiner69r"/>
+			<passive_effect operation="base_set" name="DamageModifier" value="1" tags="head,perkMiner69r" match_all_tags="true"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.7" tags="ore,stone,metal"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.8" tags="earth"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="-.9" tags="secureLoot,oreTitanium"/>
+			<passive_effect operation="perc_add" name="DamageModifier" value="2" tags="tree"/>
+			<passive_effect operation="base_set" name="HarvestCount" value=".5" tags="butcherHarvest"/>
+			<passive_effect operation="base_add" name="HarvestCount" value="1" tags="FotDHarvestAxe"/>
+		</effect_group>
+	</insertAfter>
+</config>
